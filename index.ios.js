@@ -7,6 +7,8 @@ import {
 import Landing from './application/components/Landing';
 import Dashboard from './application/components/Dashboard';
 import { globals } from './application/styles';
+import Register from './application/components/accounts/Register';
+import Login from './application/components/accounts/Login';
 
 class assemblies extends Component {
   render() {
@@ -23,6 +25,14 @@ class assemblies extends Component {
             case 'Dashboard':
               return (
                 <Dashboard navigator={navigator}/>
+            );
+            case 'Register':
+              return (
+                <Register navigator={navigator}/> 
+              );
+            case 'Login':
+              return (
+                <Login navigator={navigator}/>
             );
           }
         }}
