@@ -22,7 +22,7 @@ class Landing extends Component{
         this.visitRegister = this.visitRegister.bind(this);
     }
     visitLogin(){
-        this.props.navigator.push({ name: 'Login' });
+        this.props.navigator.push({ name: 'Dashboard' });
     }
     visitRegister(){
         this.props.navigator.push({ name: 'Register' });
@@ -42,10 +42,10 @@ class Landing extends Component{
                         source={{ uri: Logo }}
                     />
                     <Text style={[globals.lightText, globals.h2, globals.mb2]}>
-                        assemblies
+                        
                     </Text>
                     <Text style={[globals.lightText, globals.h4]}>
-                        Where Developers Connect
+                         Developers Connect
                     </Text>
                 </View>
                 <TouchableOpacity
